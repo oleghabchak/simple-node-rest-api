@@ -11,9 +11,9 @@ const connection = mysql.createConnection({
 
 connection.connect((error) => {
     if(error) {
-        return console.log('Ошибка подключения к БД!');
+        return console.log('Помилка підключення до БД!');
     } else {
-        return console.log('Подлючение успешно!');
+        return console.log('Підключення успішне !!))');
     }
 })
 
