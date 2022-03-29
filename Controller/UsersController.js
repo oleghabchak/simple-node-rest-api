@@ -65,7 +65,7 @@ exports.signin = (req, res) => {
                         userId: rw.id,
                         email: rw.email
                     }, config.jwt, { expiresIn: 120 * 120 })
-                    response.status(200, {token: ` Bearer ${token}`,  id: rw.id, email: rw.email}, res)
+                    response.status(200, {token: ` Bearer ${token}`,  id: rw.id, email: rw.email, render: true}, res)
                 } else {
                 //помилка, пароль неправильний
                     response.status(401, {message: `Пароль невірний`}, res)
